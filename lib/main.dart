@@ -1,6 +1,6 @@
-import 'package:engrane/index.dart';
+import 'package:engrane/screens/index.dart';
 import 'package:flutter/material.dart';
-import 'package:engrane/login.dart';
+import 'package:engrane/screens/login.dart';
 void main() {
   runApp(const MyApp());
 }
