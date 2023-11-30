@@ -1,3 +1,4 @@
+import 'package:engrane/screens/login.dart';
 import 'package:flutter/material.dart';
 
 class IndexScreen extends StatelessWidget {
@@ -68,7 +69,9 @@ class IndexScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center, // Centra los elementos horizontalmente
                   children: [
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => const LoginScreen()));
+                      },
                       child: const Text('Login'),
                     ),
                     const SizedBox(width: 20), // Agrega espacio entre los botones
