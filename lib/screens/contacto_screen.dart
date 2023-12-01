@@ -1,4 +1,6 @@
+import 'package:engrane/screens/screens.dart';
 import 'package:flutter/material.dart';
+import 'package:engrane/widgets/botomnavigatorbar.dart';
 
 class ContactoScreen extends StatelessWidget {
   
@@ -12,6 +14,9 @@ class ContactoScreen extends StatelessWidget {
       ),
       body: const Center(
         child: Text('ContactoScreen Contenido'),
+      ),
+      bottomNavigationBar: const BottomNavigatorBar(
+        donde: 1,
       ),
     );
   }

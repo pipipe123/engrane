@@ -1,6 +1,7 @@
-import 'package:engrane/screens/login.dart';
+import 'package:engrane/screens/login_screen.dart';
+import 'package:engrane/screens/screens.dart';
 import 'package:flutter/material.dart';
-
+import 'package:engrane/widgets/botomnavigatorbar.dart';
 class IndexScreen extends StatelessWidget {
   
   const IndexScreen ({Key? key}) : super(key: key);
@@ -86,6 +87,9 @@ class IndexScreen extends StatelessWidget {
           ),
         ),
       ),
+bottomNavigationBar: const BottomNavigatorBar(
+  donde: 0,
+),
     );
   }
 }

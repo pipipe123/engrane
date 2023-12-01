@@ -1,4 +1,6 @@
+import 'package:engrane/screens/screens.dart';
 import 'package:flutter/material.dart';
+import 'package:engrane/widgets/botomnavigatorbar.dart';
 
 class PerfilScreen extends StatelessWidget {
   
@@ -13,6 +15,7 @@ class PerfilScreen extends StatelessWidget {
       body: const Center(
         child: Text('PerfilScreen Contenido'),
       ),
+      bottomNavigationBar: const BottomNavigatorBar(),
     );
   }
 }
