@@ -1,3 +1,4 @@
+import 'package:engrane/screens/home_screen.dart';
 import 'package:engrane/screens/index.dart';
 import 'package:flutter/material.dart';
 // import 'package:engrane/screens/login_screen.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const IndexScreen(),
+      home: const HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

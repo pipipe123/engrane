@@ -29,6 +29,8 @@ class NosotrosScreen extends StatelessWidget {
               ),
             ),
             Stack(
+              // fit:StackFit.expand ,
+              // fit: StackFit.passthrough,
               children: [
                 Positioned(
                   child: Container(
@@ -41,8 +43,8 @@ class NosotrosScreen extends StatelessWidget {
                   height: 150,
                   )),
                  const Positioned(
-                  right: 0,
-                  top: 40,
+                  right: 20,
+                  top: 0,
                   child: 
                   Row(
                     children: [
@@ -59,12 +61,30 @@ class NosotrosScreen extends StatelessWidget {
                           color: Colors.white,
                         ),
                         textAlign: TextAlign.right,
-                ),
-                   ),
-                  ],)
-)
-              ],
-            )
+                      )
+                    )
+                  ]
+                )
+              ),
+            ],
+          ),
+            const Text(
+                    """
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. 
+              sunt in culpa qui officia deserunt mollit anim id est laborum.""",
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.right,
+            ),
           ],
         ),
         

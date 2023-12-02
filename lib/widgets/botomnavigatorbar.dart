@@ -65,7 +65,7 @@ class _BottomNavigatorBarState extends State<BottomNavigatorBar> {
       case 0:
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const IndexScreen()),
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
         );
         break;
       case 1:
