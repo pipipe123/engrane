@@ -12,6 +12,7 @@ class NosotrosScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Engrane Digital'),
       ),
+      // ignore: prefer_const_constructors
       drawer: MenuLateral(),
       body: fondo(
         content: Column(
@@ -36,8 +37,8 @@ class NosotrosScreen extends StatelessWidget {
               children: [
                 Positioned(
                   child: Container(
-                    height: 200,
-                    // width: ,
+                    height: double.infinity,
+                    width: double.infinity ,
                   )),
                 Positioned(
                   top: 0,
