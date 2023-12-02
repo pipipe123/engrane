@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:engrane/widgets/botomnavigatorbar.dart';
 import 'package:engrane/widgets/fondo.dart';
+import 'package:engrane/widgets/menulateral.dart';
 
 class NosotrosScreen extends StatelessWidget {
   const NosotrosScreen({Key? key}) : super(key: key);
@@ -9,8 +10,9 @@ class NosotrosScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AppBar'),
+        title: const Text('Engrane Digital'),
       ),
+      drawer: MenuLateral(),
       body: fondo(
         content: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
