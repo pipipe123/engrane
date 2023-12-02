@@ -1,19 +1,21 @@
-// import 'package:flutter/material.dart';
+  import 'package:flutter/material.dart';
+class AppTheme {
+  // ignore: non_constant_identifier_names
+  static final ThemeData TemaApp = ThemeData(
 
 
-// class StylesLogin extends StatelessWidget {
-//   static Container perro = Container();
-//   static BoxDecoration borderRadius;
 
-//   StylesLogin(this.margin, this.borderRadius);
+  //   fiel
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return perro(
-//   Margin(),
-//       ),
+  //   filled: true,
+  //   fillColor: Colors.white,
 
-//       new
-//     );
-//   }
-// }
+  // border: 
+  //   OutlineInputBorder(
+  //     borderRadius: BorderRadius.all(Radius.circular(100)),
+  //     borderSide: BorderSide.none,),
+  );
+  
+  
+  
+}

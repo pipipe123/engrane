@@ -1,4 +1,3 @@
-import 'package:engrane/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:engrane/widgets/botomnavigatorbar.dart';
 
@@ -12,8 +11,15 @@ class ContactoScreen extends StatelessWidget {
     appBar: AppBar(
       title: const Text('AppBar'),
       ),
-      body: const Center(
-        child: Text('ContactoScreen Contenido'),
+      body: Container(
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/images/fondo.jpg'), // Reemplaza con la ruta de tu imagen
+          fit: BoxFit.cover,
+        ),
+      ),
+  
+        
       ),
       bottomNavigationBar: const BottomNavigatorBar(
         donde: 1,
