@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:engrane/widgets/widgets.dart';
-
-class PerfilScreen extends StatelessWidget {
+class DisenoScreen extends StatelessWidget {
   
-  const PerfilScreen ({Key? key}) : super(key: key);
+  const DisenoScreen ({Key? key}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
-return Scaffold(
+    return Scaffold(
     appBar: AppBar(
       title: const Text('Engrane Digital',style: TextStyle(color: Colors.white)),
       backgroundColor: const Color.fromARGB(255, 0, 68, 143),
@@ -23,55 +22,40 @@ return Scaffold(
               height: double.infinity,//
               width: double.infinity,// para que ocupen toda la pantalla
             )),
-              Positioned(
-       left: MediaQuery.of(context).size.width /2 - 25,
+             const Positioned(
+              left: 40,//esto centra
 //esto centra
 
               top: 120,
-              child: const Text('Perfil',style: TextStyle(
+              child: Text('Nueva filosofia en marketing y servicios',style: TextStyle(
                   fontSize: 18,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   // backgroundColor: Colors.amber
             ))),
             Positioned(
-            left: MediaQuery.of(context).size.width /2 - 60,
-
-              top:180,
-              child: CircleAvatar(
-                radius: 60,
-                child: Image.asset('assets/images/perfilao.png',
-                height: 200,),
-              )),
+              left: 60, //esto centra
+              top:150,
+              child: Image.asset('assets/images/desarrollo_apps.png',
+              height: 200,)),
         
-             Positioned(
-            left: MediaQuery.of(context).size.width /2 -100,
-
-                top:330,
-              child:const Text('''
-Monreal Castañeda Alejandro
+            const Positioned(
+                left: 20,
+                top:350,
+              child:Text('''
+Mejoras en la gestión y procesos
+Somos expertos en la gestión de la información 
+aplicando la última tecnología, siendo e
+specialistas en el desarrollo de aplicaciones 
+móviles. Por eso, ofrecemos un servicio de 360º. 
+Asesoramos y guiamos a nuestros clientes desde 
+que nace su idea hasta que su aplicación queda 
+en manos de los usuarios.
 
                   ''',
                   
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold
-                      // backgroundColor: Colors.amber
-                ),
-                textAlign: TextAlign.justify,)),Positioned(
-            left: MediaQuery.of(context).size.width /2 -130,
-
-                top:380,
-              child:const Text('''
-Celular:618 110 7584
-Correo: alesmonreal56@gmail.com
-Ocupacion: Estudiante
-
-                  ''',
-                  
-                style: TextStyle(
-                  fontSize: 18,
                   color: Colors.white,
                   fontWeight: FontWeight.bold
                       // backgroundColor: Colors.amber

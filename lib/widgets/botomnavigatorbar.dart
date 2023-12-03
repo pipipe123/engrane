@@ -25,6 +25,8 @@ class _BottomNavigatorBarState extends State<BottomNavigatorBar> {
         color: widget.donde == 0 ? Colors.purple : Colors.grey,
       ),
       child: BottomNavigationBar(
+      // backgroundColor: Color.fromARGB(255,154, 250, 254),
+
         currentIndex: _currentPage,
         items: [
           BottomNavigationBarItem(
@@ -65,7 +67,7 @@ class _BottomNavigatorBarState extends State<BottomNavigatorBar> {
       case 0:
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const IndexScreen()),
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
         );
         break;
       case 1:

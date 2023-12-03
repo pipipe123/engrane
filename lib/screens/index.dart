@@ -1,6 +1,7 @@
-import 'package:engrane/screens/login_screen.dart';
+import 'package:engrane/screens/registro_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:engrane/widgets/botomnavigatorbar.dart';
+import 'package:engrane/screens/login_screen.dart';
+
 class IndexScreen extends StatelessWidget {
   const IndexScreen({Key? key}) : super(key: key);
 
@@ -86,7 +87,10 @@ class IndexScreen extends StatelessWidget {
                     const SizedBox(
                         width: 20), // Agrega espacio entre los botones
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => const RegistroScreen()));
+
+                      },
                       child: const Text('Registro'),
                     ),
                   ],
@@ -96,9 +100,7 @@ class IndexScreen extends StatelessWidget {
           ),
         ),
       ),
-bottomNavigationBar: const BottomNavigatorBar(
-  donde: 0,
-),
+
     );
   }
 }
