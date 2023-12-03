@@ -1,3 +1,5 @@
+import 'package:engrane/screens/home_screen.dart';
+import 'package:engrane/screens/registro_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -86,7 +88,10 @@ class LoginScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      ElevatedButton(onPressed: () {},
+                      ElevatedButton(onPressed: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => const HomeScreen()));
+
+                      },
                        child: const Text('entrar')
                        ),
                     ],
@@ -95,10 +100,15 @@ class LoginScreen extends StatelessWidget {
                 ),
                 
               ),
-              ElevatedButton(onPressed: () {},
+              ElevatedButton(onPressed: () {
+                
+              },
                 child: const Text('recuperar contraseña')
               ),
-              ElevatedButton(onPressed: () {},
+              ElevatedButton(onPressed: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context) => const RegistroScreen()));
+
+              },
                 child: const Text('registro')
               ),
             ],

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:engrane/widgets/fondo.dart';
-import 'package:engrane/widgets/menulateral.dart';
-import 'package:engrane/widgets/botomnavigatorbar.dart';
+import 'package:engrane/widgets/widgets.dart';
 class DisenoScreen extends StatelessWidget {
   
   const DisenoScreen ({Key? key}) : super(key: key);
@@ -13,6 +11,8 @@ class DisenoScreen extends StatelessWidget {
       title: const Text('Engrane Digital',style: TextStyle(color: Colors.white)),
       backgroundColor: const Color.fromARGB(255, 0, 68, 143),
        iconTheme: const IconThemeData(color: Colors.white),
+      actions: const [Perfil()],
+
       ),
       drawer: const MenuLateral(),
       body:  fondo(
