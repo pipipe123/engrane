@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:engrane/widgets/botomnavigatorbar.dart';
 import 'package:engrane/widgets/fondo.dart';
 import 'package:engrane/widgets/menulateral.dart';
-class EcommerceScreen extends StatelessWidget {
+import 'package:engrane/widgets/botomnavigatorbar.dart';
+class DesarrolloScreen extends StatelessWidget {
   
-  const EcommerceScreen ({Key? key}) : super(key: key);
+  const DesarrolloScreen ({Key? key}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class EcommerceScreen extends StatelessWidget {
        iconTheme: const IconThemeData(color: Colors.white),
       ),
       drawer: const MenuLateral(),
-      body:  fondo(
+      body: fondo(
         content: Stack(
           children: [
             const Positioned(child: SizedBox(
@@ -25,25 +25,25 @@ class EcommerceScreen extends StatelessWidget {
             const Positioned(
               left: 10,//esto centra
 
-              top: 120,
-              child: Text('¡Comienza el año invirtiendo como se debe!',style: TextStyle(
+              top: 80,
+              child: Text('Plasma tus ideas en un sitio web multifuncional',style: TextStyle(
                   fontSize: 18,
                   color: Colors.white,
                   fontWeight: FontWeight.bold
                   // backgroundColor: Colors.amber
             ))),
             Positioned(
-              right: -50,
+              right: 20,
               top:150,
-              child: Image.asset('assets/images/ecommerce.png',
-              height: 200,)),
+              child: Image.asset('assets/images/diseno_web.png',
+              height: 400,)),
           
             const Positioned(
                 left: 20,
-                top: 160,
+                top: 110,
                 
                 child: Text('''
-E-commerce
+diseño y desarrollo web
                   ''',
                   
                 style: TextStyle(
@@ -54,18 +54,21 @@ E-commerce
                 textAlign: TextAlign.left
               )), 
             const Positioned(
-                left: 10,
-                top:280,
+                left: 20,
+                top:180,
               child:Text('''
-Todo y más, en el mismo lugar.
-Ahora es fácil vender tus 
-productos al rededor del mundo. 
-Con tu local comercial no tendrás tanto 
-alcance, por eso vender a 
-través de una tienda 
-virtual es la solución. Te ofrecemos herramientas 
-para manejar tu propio negocio, con la mayor 
-facilidad.
+¿Cómo trabajamos?
+
+Diseñamos páginas web 
+funcionales, estéticas y 
+frescas que ofrezcan una 
+gran experiencia de 
+navegación a los usuarios. 
+Creamos contenido 
+limpio, eficaz e innovador 
+que atraiga tráfico 
+hacia tu web.
+
 
                   ''',
                   

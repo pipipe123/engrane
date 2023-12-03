@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:engrane/widgets/botomnavigatorbar.dart';
 import 'package:engrane/widgets/fondo.dart';
 import 'package:engrane/widgets/menulateral.dart';
-class EcommerceScreen extends StatelessWidget {
+import 'package:engrane/widgets/botomnavigatorbar.dart';
+class DisenoScreen extends StatelessWidget {
   
-  const EcommerceScreen ({Key? key}) : super(key: key);
+  const DisenoScreen ({Key? key}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
@@ -22,67 +22,51 @@ class EcommerceScreen extends StatelessWidget {
               height: double.infinity,//
               width: double.infinity,// para que ocupen toda la pantalla
             )),
-            const Positioned(
-              left: 10,//esto centra
+             const Positioned(
+              left: 40,//esto centra
+//esto centra
 
               top: 120,
-              child: Text('¡Comienza el año invirtiendo como se debe!',style: TextStyle(
+              child: Text('Nueva filosofia en marketing y servicios',style: TextStyle(
                   fontSize: 18,
                   color: Colors.white,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
                   // backgroundColor: Colors.amber
             ))),
             Positioned(
-              right: -50,
+              left: 60, //esto centra
               top:150,
-              child: Image.asset('assets/images/ecommerce.png',
+              child: Image.asset('assets/images/desarrollo_apps.png',
               height: 200,)),
-          
+        
             const Positioned(
                 left: 20,
-                top: 160,
-                
-                child: Text('''
-E-commerce
-                  ''',
-                  
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.white,
-                  // backgroundColor: Colors.amber
-                ),
-                textAlign: TextAlign.left
-              )), 
-            const Positioned(
-                left: 10,
-                top:280,
+                top:350,
               child:Text('''
-Todo y más, en el mismo lugar.
-Ahora es fácil vender tus 
-productos al rededor del mundo. 
-Con tu local comercial no tendrás tanto 
-alcance, por eso vender a 
-través de una tienda 
-virtual es la solución. Te ofrecemos herramientas 
-para manejar tu propio negocio, con la mayor 
-facilidad.
+Mejoras en la gestión y procesos
+Somos expertos en la gestión de la información 
+aplicando la última tecnología, siendo e
+specialistas en el desarrollo de aplicaciones 
+móviles. Por eso, ofrecemos un servicio de 360º. 
+Asesoramos y guiamos a nuestros clientes desde 
+que nace su idea hasta que su aplicación queda 
+en manos de los usuarios.
 
                   ''',
                   
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 16,
                   color: Colors.white,
                   fontWeight: FontWeight.bold
                       // backgroundColor: Colors.amber
                 ),
-                textAlign: TextAlign.left,))
+                textAlign: TextAlign.justify,))
 
           ]
         ),
       ),
       bottomNavigationBar: const BottomNavigatorBar(
-  
-),
+      ),
     );
   }
 }

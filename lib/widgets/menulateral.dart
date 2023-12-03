@@ -34,7 +34,7 @@ class MenuLateral extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.computer),
-            title: const Text('Diseño y desarrollo web'),
+            title: const Text('Diseño web'),
             onTap: () {
               // Puedes realizar acciones al hacer clic en esta opción
                Navigator.push(
