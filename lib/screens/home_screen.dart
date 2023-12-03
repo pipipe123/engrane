@@ -11,8 +11,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
     appBar: AppBar(
-      title: const Text('Home'),
-      
+      title: const Text('Engrane Digital',style: TextStyle(color: Colors.white)),
+      backgroundColor: const Color.fromARGB(255, 0, 68, 143),
+       iconTheme: const IconThemeData(color: Colors.white),
       ),
       drawer: const MenuLateral(),
       body:   fondo(
@@ -27,7 +28,7 @@ class HomeScreen extends StatelessWidget {
               bottom: 300,
               right: 0,
               
-              child: Image.asset('assets/images/img1.png',
+              child: Image.asset('assets/images/cambiao3.png',
               height:250 ,
               )),
 
@@ -44,22 +45,23 @@ medida.
                 style: TextStyle(
                   fontSize: 24,
                   color: Colors.white,
-                  backgroundColor: Colors.amber
+                  // backgroundColor: Colors.amber
                 ),
-                textAlign: TextAlign.left,)),              const Positioned(
-                left: 10,
-                top: 380,
+                textAlign: TextAlign.left,)),              
+                const Positioned(
+                  left: 10,
+                  top: 280,
                 
-                child: Text('''
+                  child: Text('''
 mas de 10 años de experiencia y nuestros
 clientes lo avalan
                   ''',
                   
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.white,
-                      backgroundColor: Colors.amber
-                ),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.white,
+                      // backgroundColor: Colors.amber
+                  ),
                 textAlign: TextAlign.left,))
           ],
         ),

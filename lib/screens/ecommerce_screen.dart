@@ -1,25 +1,24 @@
-import 'package:engrane/widgets/menulateral.dart';
 import 'package:flutter/material.dart';
 import 'package:engrane/widgets/botomnavigatorbar.dart';
 import 'package:engrane/widgets/fondo.dart';
-
-class ContactoScreen extends StatelessWidget {
+import 'package:engrane/widgets/menulateral.dart';
+class EcommerceScreen extends StatelessWidget {
   
-  const ContactoScreen ({Key? key}) : super(key: key);
+  const EcommerceScreen ({Key? key}) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
+    appBar: AppBar(
       title: const Text('Engrane Digital',style: TextStyle(color: Colors.white)),
       backgroundColor: const Color.fromARGB(255, 0, 68, 143),
        iconTheme: const IconThemeData(color: Colors.white),
       ),
       drawer: const MenuLateral(),
-      body: fondo(
+      body:  fondo(
         content: Stack(
           children: [
-           const Positioned(child: SizedBox(
+            const Positioned(child: SizedBox(
               height: double.infinity,//
               width: double.infinity,// para que ocupen toda la pantalla
             )),
@@ -35,7 +34,7 @@ class ContactoScreen extends StatelessWidget {
             Positioned(
               right: 0,
               top:150,
-              child: Image.asset('assets/images/cambiao2.png',
+              child: Image.asset('assets/images/ecommerce.png',
               height: 200,)),
           
             const Positioned(
@@ -83,9 +82,8 @@ contactogdl@engranedigital.com      |   (33)4444-9933
         ),
       ),
       bottomNavigationBar: const BottomNavigatorBar(
-        donde: 1,
-      ),
+  
+),
     );
   }
 }
-        // content: ,Image.asset('assets/images/cambiao2.png')
