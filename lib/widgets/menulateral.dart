@@ -47,7 +47,7 @@ class MenuLateral extends StatelessWidget {
             leading: const Icon(Icons.mobile_friendly),
             title: const Text('Desarrollo de apps'),
             onTap: () {
-              // Puedes realizar acciones al hacer clic en esta opción
+
                Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const DisenoScreen())
@@ -58,7 +58,7 @@ class MenuLateral extends StatelessWidget {
             leading: const Icon(Icons.shopping_cart),
             title: const Text('Ecommerce'),
             onTap: () {
-              // Puedes realizar acciones al hacer clic en esta opción
+
                Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const EcommerceScreen())

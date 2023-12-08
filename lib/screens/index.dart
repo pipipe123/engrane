@@ -1,4 +1,5 @@
 import 'package:engrane/screens/registro_screen.dart';
+import 'package:engrane/widgets/fondo.dart';
 import 'package:flutter/material.dart';
 import 'package:engrane/screens/login_screen.dart';
 
@@ -10,88 +11,65 @@ class IndexScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 0, 68, 143),
-        leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.menu,
-              color: Colors.white,
-            )),
         title: const Text(
           'Engrane Digital',
           style: TextStyle(color: Colors.white),
         ),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-                color: Colors.white,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.more_vert,
-                color: Colors.white,
-              ))
-        ],
       ),
       backgroundColor: const Color.fromARGB(255, 0, 104, 219),
-      body: Center(
-        child: Container(
-          margin:
-              const EdgeInsets.only(bottom: 200, left: 10, right: 10, top: 35),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 30),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(40),
-            color: Colors.white60,
-          ),
+      body: fondo(
+        content: SizedBox(
+          width: double.infinity - 20,
           child: Column(
-            children: <Widget>[
-              const Center(
-                child: Text(
-                  'bienvenido al inicio de sesion',
-                  style: TextStyle(fontSize: 20),
-                ),
+            children: [
+              const SizedBox(height: 16.0),
+              const Text(
+                'Bienvenido al inicio de sesion',
+                style: TextStyle(fontSize: 20, color: Colors.white),
+                textAlign: TextAlign.center,
               ),
-              Container(
-                margin:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
-                  color: Colors.white70,
-                ),
-                child: const Column(
-                  children: <Widget>[
-                    Text(
-                        '!i Bienvenido al soporte tecnico de engrane digital!\n'),
-                    Text(
-                        'Estamos aquí para ayudarte en cada paso del camino y resolver cualquier inconveniente que puedas tener.\n'),
-                    Text(
-                        'Por favor, inicia sesion o registrate para brindarle la solucion lo antes posible.\n'),
-                  ],
-                ),
+              const SizedBox(height: 16.0),
+
+              const Text(
+                """
+¡Bienvenido al soporte técnico de engrane digital!""",
+                style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
               ),
+              const SizedBox(height: 16.0),
+
+              const Text(
+                """
+Estamos aquí para ayudarte en cada paso del camino y resolver cualquier inconveniente que puedas tener.""",
+                style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 32.0),
+
+              const Text(
+                '''
+Por favor, inicia sesión o regístrate para brindarle la solución lo antes posible.''',
+                style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 16.0),
+
               Center(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment
-                      .center, // Centra los elementos horizontalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.push(context,MaterialPageRoute(builder: (context) => const LoginScreen()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  LoginScreen()));
                       },
-                      child: const Text('Login'),
+                      child: const Text('Login', textAlign: TextAlign.center,),
                     ),
-                    const SizedBox(
-                        width: 20), // Agrega espacio entre los botones
+                    const SizedBox(width: 20),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.push(context,MaterialPageRoute(builder: (context) => const RegistroScreen()));
-
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const RegistroScreen()));
                       },
-                      child: const Text('Registro'),
+                      child: const Text('Registro', textAlign: TextAlign.center,),
                     ),
                   ],
                 ),
@@ -100,7 +78,6 @@ class IndexScreen extends StatelessWidget {
           ),
         ),
       ),
-
     );
   }
 }

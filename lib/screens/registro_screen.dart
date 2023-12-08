@@ -1,6 +1,6 @@
-import 'package:engrane/widgets/fondo.dart';
+import 'package:engrane/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 class RegistroScreen extends StatelessWidget {
   
   const RegistroScreen ({Key? key}) : super(key: key);
@@ -8,8 +8,14 @@ class RegistroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar: AppBar(
-      title: const Text('Registro'),
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 0, 68, 143),
+       
+        title: const Text(
+          'Engrane Digital',
+          style: TextStyle(color: Colors.white),
+        ),
+
       ),
        body: 
        fondo(
@@ -18,6 +24,8 @@ class RegistroScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset('assets/images/logo.png'),
+            const SizedBox(height: 16.0),
             const TextField(
               decoration: InputDecoration(labelText: 'Usuario'),
             ),
